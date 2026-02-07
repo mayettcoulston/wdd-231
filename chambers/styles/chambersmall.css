@@ -164,4 +164,65 @@ button {
     color: white;
 }
 
+.join-layout {
+    grid-template-columns: 1fr;
+}
+
+.join-form {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 450px;
+    border: 2px solid #d3d4d5;
+}
+
+
+.join-form h2 {
+    margin-bottom: 1.5rem;
+    color: #0A1F44;
+}
+
+.join-form label {
+    display: block;
+    padding: 0.75rem 0;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+
+.join-form input[type="text"],
+.join-form input[type="email"],
+.join-form input[type="tel"],
+.join-form select,
+.join-form textarea {
+    background-color: #F2E9D0;
+    display: block;
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: 0.75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+
+.join-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.join-form input[type="submit"] {
+    background-image: linear-gradient(#0A1F44, #0A1F44);
+    color: #F2E9D0;
+    border: none;
+    border-radius: 6px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 1.5rem;
+}
 

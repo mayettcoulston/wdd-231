@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Coulston Mayett">
+    <meta name="description" content="Chamber of Commerce">
+    <meta property="og:title" content="Facebook page of Coulston Mayett">
+    <meta property="og:description" content="Explore Coulston Mayett facebook page">
+    <meta property="og:image"
+        content="https://www.facebook.com/photo.php?fbid=2793662360912308&set=pb.100008057143030.-2207520000&type=3">
+    <meta property="og:url" content="https://www.facebook.com/coulston.mayett.3">
+    <meta property="og:locale" content="en_US">
+    <title>Nairobi Chamber of Commerce</title>
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chambersmall.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <img src="images/bank2.svg" alt="Site logo" width="24" height="24">
+        <span>Nairobi Chamber of Commerce</span>
+        <button id="hambutton" class="hamburger"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Discover</a></li>
+                <li><a href="directory.html">Business Directory</a></li>
+                <li class="current"><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Join</h1>
+
+        <section class="hero">
+            <img src="images/hero.webp" alt="Nairobi city skyline">
+            <div class="hero-content">
+                <h2>Nairobi Chamber of Commerce</h2>
+                <a href="join.html" class="cta-button">Join the Chamber</a>
+            </div>
+        </section>
+
+        <section class="join-layout">
+        
+            <form method="get" action="thankyou.html" class="join-form">
+                <h2>Membership Application</h2>
+        
+                <label>
+                    First Name*
+                    <input type="text" name="fname" title="First Name" autocomplete="given-name" required>
+                </label>
+        
+                <label>
+                    Last Name*
+                    <input type="text" name="lname" title="Last Name" autocomplete="family-name" required>
+                </label>
+        
+                <label>
+                    Organizational Title
+                    <input type="text" name="orgtitle" title="Organizational Title" autocomplete="organization-title"
+                        pattern="[A-Za-z\s\-]{7,}">
+                </label>
+        
+                <label>
+                    Email Address*
+                    <input type="email" name="email" title="Email Address" autocomplete="email" placeholder="example@email.com"
+                        required>
+                </label>
+        
+                <label>
+                    Mobile Phone*
+                    <input type="tel" name="phone" title="Mobile Phone" autocomplete="tel" required>
+                </label>
+        
+                <label>
+                    Business / Organization Name*
+                    <input type="text" name="business" title="Business Name" autocomplete="organization" required>
+                </label>
+        
+                <label>
+                    Membership Level
+                    <select name="membership">
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+        
+                <label>
+                    Business Description
+                    <textarea name="description" title="Business Description"></textarea>
+                </label>
+        
+                <input type="hidden" name="timestamp" id="timestamp">
+        
+                <input type="submit" value="Apply for Membership">
+            </form>
+
+            <aside class="membership-cards">
+            
+                <div class="card np">
+                    <h3>NP Membership</h3>
+                    <p>No fee for non-profits.</p>
+                    <a href="#" onclick="document.querySelector('#npModal').showModal()">More Info</a>
+                </div>
+            
+                <div class="card bronze">
+                    <h3>Bronze Membership</h3>
+                    <p>Entry-level exposure.</p>
+                    <a href="#" onclick="document.querySelector('#bronzeModal').showModal()">More Info</a>
+                </div>
+            
+                <div class="card silver">
+                    <h3>Silver Membership</h3>
+                    <p>More visibility & training.</p>
+                    <a href="#" onclick="document.querySelector('#silverModal').showModal()">More Info</a>
+                </div>
+            
+                <div class="card gold">
+                    <h3>Gold Membership</h3>
+                    <p>Maximum exposure & benefits.</p>
+                    <a href="#" onclick="document.querySelector('#goldModal').showModal()">More Info</a>
+                </div>
+            
+            </aside>
+            </section>
+
+            <dialog id="npModal">
+                <h3>NP Membership</h3>
+                <p>No cost. Ideal for non-profit organizations.</p>
+                <button onclick="this.closest('dialog').close()">Close</button>
+            </dialog>
+            
+            <dialog id="bronzeModal">
+                <h3>Bronze Membership</h3>
+                <p>Event discounts and directory listing.</p>
+                <button onclick="this.closest('dialog').close()">Close</button>
+            </dialog>
+            
+            <dialog id="silverModal">
+                <h3>Silver Membership</h3>
+                <p>Training access and homepage exposure.</p>
+                <button onclick="this.closest('dialog').close()">Close</button>
+            </dialog>
+            
+            <dialog id="goldModal">
+                <h3>Gold Membership</h3>
+                <p>Spotlights, advertising, and premium events.</p>
+                <button onclick="this.closest('dialog').close()">Close</button>
+            </dialog>
+
+
+    </main>
+    <footer>
+        <h4>Nairobi Chamber of Commerce</h4>
+        <span>Nairobi City</span>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/coulston-mayett-404380157/" target="_blank"><img
+                    src="images/linkedin.svg" alt="LinkedIn" width="16" height="16"></a>
+            <a href="https://github.com/mayettcoulston" target="_blank"><img src="images/github.svg" alt="github"
+                    width="16" height="16"></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><img src="images/whatsapp.svg" alt="whatsApp" width="16"
+                    height="16"></a>
+            <a href="https://www.facebook.com/coulston.mayett.3" target="_blank"><img src="images/facebook (1).svg"
+                    alt="facebook" width="16" height="16"></a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> |Coulston Mayett | WDD231</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/date.js"></script>
+
+</body>
+
+</html>
