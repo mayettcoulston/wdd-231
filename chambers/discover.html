@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="styles/larger.css">
 
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/thankyou.js" defer></script>
+    <script src="scripts/discover.js" type="module" defer></script>
 
 </head>
 
@@ -32,22 +32,27 @@
         <nav id="nav-bar" class="navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li class="current"><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Business Directory</a></li>
                 <li><a href="#">Join</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Thank You for Joining!</h1>
-        
-        <section class="summary">
-            <p><strong>Name:</strong> <span id="name"></span></p>
-            <p><strong>Email:</strong> <span id="email"></span></p>
-            <p><strong>Phone:</strong> <span id="phone"></span></p>
-            <p><strong>Business:</strong> <span id="business"></span></p>
-            <p><strong>Date Submitted:</strong> <span id="date"></span></p>
+        <h1>Discover</h1>
+
+        <section class="hero">
+            <img src="images/hero.webp" alt="Nairobi city skyline">
+            <div class="hero-content">
+                <h2>Nairobi Chamber of Commerce</h2>
+                <a href="join.html" class="cta-button">Join the Chamber</a>
+            </div>
         </section>
+
+        <div id="visit-message" class="visit-message"></div>
+        
+        <section class="discover-grid" id="cards"></section>
+
     </main>
     <footer>
         <h4>Nairobi Chamber of Commerce</h4>

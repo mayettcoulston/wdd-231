@@ -90,6 +90,18 @@
     animation-delay: .8s
 }
 
+.discover-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "one two three"
+        "four five six"
+        "seven eight";
+}
+
+.card img:hover {
+    transform: scale(1.05);
+}
+
 @keyframes fadeUp {
     to {
         opacity: 1;

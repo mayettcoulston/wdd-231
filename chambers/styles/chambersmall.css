@@ -164,6 +164,47 @@ button {
     color: white;
 }
 
+#members.grid-view {
+    display: grid;
+    gap: 1.5rem;
+}
+
+/* Individual Member Card */
+#members.grid-view .member-card {
+    background: #F2E9D0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Image styling */
+#members.grid-view .member-card img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Hover effect (desktop only later) */
+#members.grid-view .member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Website link */
+#members.grid-view .member-card a {
+    color: #0A1F44;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#members.grid-view .member-card a:hover {
+    text-decoration: underline;
+}
+
 .join-layout {
     grid-template-columns: 1fr;
 }
@@ -226,3 +267,44 @@ button {
     margin-top: 1.5rem;
 }
 
+.visit-message {
+    background: #F4F6F8;
+    color: #0A1F44;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.discover-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+            "one"
+            "two"
+            "three"
+            "four"
+            "five"
+            "six"
+            "seven"
+            "eight";
+}
+
+.card {
+    background: #F2E9D0;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.card button {
+    background: #0A1F44;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
